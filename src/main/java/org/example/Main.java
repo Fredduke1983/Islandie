@@ -1,22 +1,51 @@
 package org.example;
 
+import org.example.location.Cell;
 import org.example.location.GameField;
-import org.example.entities.Organism;
+import org.example.modules.Animal;
+import org.example.modules.Organism;
+import org.example.services.CLI;
+import org.example.simulation.Simulation;
+import org.example.utils.ShowLife;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class Main {
-    public static void main(String[] args) throws InstantiationException, IllegalAccessException {
+
+    public static void main(String[] args) {
+
         GameField gameField = GameField.getInstance();
         gameField.init();
+        Simulation simulation = new Simulation(gameField);
+        ShowLife showLife = new ShowLife(gameField);
+        CLI cli = new CLI(0);
 
-        System.out.println(gameField.getCell(2, 4).getOrganisms());
-        List<ArrayList<Organism>> organisms = gameField.getCell(2, 4).getOrganisms();
-        System.out.println(organisms.get(0).size());
-        System.out.println(organisms.get(0).remove(0));
-        System.out.println(organisms.get(0).size());
+        int lifeTime = cli.getLifeTime();
 
+        long startTime = System.currentTimeMillis();
 
+        showLife.current();
+        while (System.currentTimeMillis() - startTime < lifeTime) {
+            simulation.oneCycle();
+            if (isIslandLive(gameField)) break;
+        }
+        showLife.current();
+        System.out.println("=====================================");
+    }
+
+    static boolean isIslandLive(GameField gameField) {
+        Cell[][] cells = gameField.getCells();
+        for (Cell[] rowCells : cells) {
+            for (Cell cell : rowCells) {
+                for (ArrayList<Organism> organisms : cell.getOrganisms()) {
+                    for (Organism organism : organisms) {
+                        if (organism instanceof Animal) {
+                            return false;
+                        }
+                    }
+                }
+            }
+        }
+        return true;
     }
 }

@@ -1,0 +1,111 @@
+{
+  "WOLF": {
+    "WOLF": 0,
+    "SNAKE": 0,
+    "FOX": 15,
+    "BEAR": 0,
+    "EAGLE": 0,
+    "HORSE": 10,
+    "RABBIT": 60,
+    "MOUSE": 80,
+    "DEER": 70,
+    "GRASS": 0
+  },
+  "SNAKE": {
+    "WOLF": 0,
+    "SNAKE": 0,
+    "FOX": 15,
+    "BEAR": 0,
+    "EAGLE": 0,
+    "HORSE": 0,
+    "RABBIT": 20,
+    "MOUSE": 40,
+    "DEER": 0,
+    "GRASS": 0
+  },
+  "FOX": {
+    "WOLF": 0,
+    "SNAKE": 0,
+    "FOX": 0,
+    "BEAR": 0,
+    "EAGLE": 0,
+    "HORSE": 0,
+    "RABBIT": 70,
+    "MOUSE": 90,
+    "DEER": 0,
+    "GRASS": 0
+  },
+  "BEAR": {
+    "WOLF": 0,
+    "SNAKE": 80,
+    "FOX": 0,
+    "BEAR": 0,
+    "EAGLE": 0,
+    "HORSE": 40,
+    "RABBIT": 80,
+    "MOUSE": 90,
+    "DEER": 70,
+    "GRASS": 0
+  },
+  "EAGLE": {
+    "WOLF": 0,
+    "SNAKE": 0,
+    "FOX": 10,
+    "BEAR": 0,
+    "EAGLE": 0,
+    "HORSE": 0,
+    "RABBIT": 90,
+    "MOUSE": 90,
+    "DEER": 0,
+    "GRASS": 0
+  },
+  "HORSE": {
+    "WOLF": 0,
+    "SNAKE": 0,
+    "FOX": 0,
+    "BEAR": 0,
+    "EAGLE": 0,
+    "HORSE": 0,
+    "RABBIT": 0,
+    "MOUSE": 0,
+    "DEER": 0,
+    "GRASS": 100
+  },
+  "RABBIT": {
+    "WOLF": 0,
+    "SNAKE": 0,
+    "FOX": 0,
+    "BEAR": 0,
+    "EAGLE": 0,
+    "HORSE": 0,
+    "RABBIT": 0,
+    "MOUSE": 0,
+    "DEER": 0,
+    "GRASS": 100
+  },
+  "MOUSE": {
+    "WOLF": 0,
+    "SNAKE": 0,
+    "FOX": 0,
+    "BEAR": 0,
+    "EAGLE": 0,
+    "HORSE": 0,
+    "RABBIT": 0,
+    "MOUSE": 0,
+    "DEER": 0,
+    "GRASS": 100
+  },
+  "DEER": {
+    "WOLF": 0,
+    "SNAKE": 0,
+    "FOX": 0,
+    "BEAR": 0,
+    "EAGLE": 0,
+    "HORSE": 0,
+    "RABBIT": 0,
+    "MOUSE": 0,
+    "DEER": 0,
+    "GRASS": 100
+  }
+}
+

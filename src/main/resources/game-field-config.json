@@ -1,0 +1,78 @@
+{
+  "field": {
+    "width": 20,
+    "height": 20
+  },
+  "organism-info": {
+    "RABBIT": {
+      "maxOrganismsAtCell": 150.0,
+      "needFood": 0.45,
+      "weight": 2.0,
+      "defaultHealth": 100.0,
+      "speed": 2.0
+    },
+    "DEER": {
+      "maxOrganismsAtCell": 140.0,
+      "needFood": 15.0,
+      "weight": 70.0,
+      "defaultHealth": 100.0,
+      "speed": 3.0
+    },
+    "HORSE": {
+      "maxOrganismsAtCell": 20.0,
+      "needFood": 6.0,
+      "weight": 40.0,
+      "defaultHealth": 100.0,
+      "speed": 4.0
+    },
+    "MOUSE": {
+      "maxOrganismsAtCell": 500.0,
+      "needFood": 0.01,
+      "weight": 0.05,
+      "defaultHealth": 100.0,
+      "speed": 1.0
+    },
+    "BEAR": {
+      "maxOrganismsAtCell": 5.0,
+      "needFood": 80.0,
+      "weight": 500.0,
+      "defaultHealth": 100.0,
+      "speed": 2.0
+    },
+    "WOLF": {
+      "maxOrganismsAtCell": 30.0,
+      "needFood": 8.0,
+      "weight": 50.0,
+      "defaultHealth": 100.0,
+      "speed": 3.0
+    },
+    "FOX": {
+      "maxOrganismsAtCell": 30.0,
+      "needFood": 2.0,
+      "weight": 8.0,
+      "defaultHealth": 100.0,
+      "speed": 2.0
+    },
+    "SNAKE": {
+      "maxOrganismsAtCell": 30.0,
+      "needFood": 3.0,
+      "weight": 15.0,
+      "defaultHealth": 100.0,
+      "speed": 1.0
+    },
+    "EAGLE": {
+      "maxOrganismsAtCell": 20.0,
+      "needFood": 1.0,
+      "weight": 6.0,
+      "defaultHealth": 100.0,
+      "speed": 3.0
+    },
+    "GRASS": {
+      "maxOrganismsAtCell": 200.0,
+      "needFood": 0.0,
+      "weight": 1.0,
+      "defaultHealth": 100.0,
+      "speed": 0.0
+    }
+  }
+}
